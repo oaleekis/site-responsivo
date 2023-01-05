@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+body {
+    background-color: #e4e7eb;
+    min-height: 100vh;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 4%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+nav .menu-icon {
+    cursor: pointer;
+    display: none;
+}
+nav .logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00BFA6;
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center; 
+}
+nav ul li {
+    padding: 0px 32px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #00BFA6;
+}
+main {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-bx {
+    width: 40%;
+}
+.text-bx h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.text-bx h1 b { 
+    color: #00BFA6;
+}
+.text-bx p { 
+    color: #5c5e5d;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.text-bx .input-bx { 
+   margin: 20px 0;
+   display: flex;
+}
+.text-bx .input-bx input{ 
+    width: 60%;
+    display: block;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #5c5e5d;
+    font-size: 16px;
+ }
+ .text-bx .input-bx input::placeholder{ 
+    color: #5c5e5d;
+ }
+ .text-bx .input-bx button {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #00BFA6;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+ }
+ .medias-sociais{
+    margin-top: 30px;
+ }
+ .medias-sociais a {
+    text-decoration: none;
+ }
+ .medias-sociais i{
+    font-size: 23px;
+    margin: 0 3px;
+    color: white;
+    background-color: #00BFA6;
+    padding: 7px;
+    border-radius: 5px;
+ }
+.img-bx{
+    width: 60%;
+}
+.img-bx img{
+    width: 100%;
+}
+@media (max-width:970px) {
+    nav .menu-icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s ease-in;
+        background-color: #00BFA6;
+    }
+    nav ul.active{
+        transform: translateX(0);
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    nav ul li a{
+        font-size: 18px;
+        color: white;
+    }
+    main{
+        flex-direction: column;
+    }
+    .text-bx,
+    .img-bx{
+        width: 100%;
+        text-align: center;
+    }
+    .text-bx{
+        margin-bottom: 40px;
+    }
+    .text-bx .input-bx{
+        justify-content: center;
+    }
+}
