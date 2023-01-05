@@ -257,7 +257,7 @@ button:hover {
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         transition: 0.3s ease-in;
         background-color: #00BFA6;
     }
@@ -268,7 +268,7 @@ button:hover {
         padding: 10px;
     }
     nav ul li a{
-        font-size: 18px;
+        font-size: 30px;
         color: white;
     }
     main{
